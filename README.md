@@ -7,10 +7,10 @@ ngSlide
 
 ####HTML部分：
 
-'<div slider controller=‘yourcon’></div>'
+·<div slider controller=‘yourcon’></div>·
 
 ####js部分：
-'<script src="js/ngslider.js"></script>
+·<script src="js/ngslider.js"></script>
 <script>
     angular.module("app",['tibooslider'])
             .controller("appcon",function($scope){
@@ -22,4 +22,4 @@ ngSlide
                     {src:"http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg"},
                 ];
             });
-</script>'
+</script>·
