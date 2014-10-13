@@ -7,13 +7,13 @@ ngSlide
 
 ####HTML部分：
 
-    <div slider controller=‘yourcon’></div>
+    <div slider controller='yourcon'></div>
 
 ####js部分：
     <script src="js/ngslider.js"></script>
     <script>
-        angular.module("app",['tibooslider'])
-                .controller("appcon",function($scope){
+        angular.module("app",['tibooslider'])  //app改为你自己的appName
+                .controller("yourcon",function($scope){         //yourcon请改成你自己的controller名
                     $scope.config = {autoPlay:'true',id: "tibooslider"};
                     $scope.config.li = [
                         {src:"http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg",txt:"你猜猜看啊"},
