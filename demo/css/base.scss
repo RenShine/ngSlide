@@ -1,0 +1,69 @@
+@charset "UTF-8";
+*{
+	margin:0;
+	padding: 0;
+}   
+a,a:hover{
+	text-decoration: none;
+}
+ul li{
+	list-style: none;
+}
+.cc:after {
+clear: both;
+content: "/20";
+display: block;
+height: 0;
+visibility: hidden;
+}
+.fl{
+	float: left;
+	*display: inline;
+}
+img{
+	border:none;
+}
+@mixin bg($url,$width,$height){ 
+	background: url($url) no-repeat scroll center center;
+	width: $width;
+	height: $height;
+}
+@mixin btn($font,$bgcolor,$color){
+	font:$font;
+	text-align: center;   
+	background-color: $bgcolor;
+	color:$color;
+}
+@mixin formrow($font,$lwidth,$iwidth,$iheight){
+	.form-label,.form-input{
+		float: left; 
+		*display: inline;
+	}
+	.form-label{
+		margin-right: 10px;
+		width: $lwidth;
+		text-align: right;
+		height: $iheight + 2; 
+		font:$font;
+	}
+	.form-input{
+		width: $iwidth;
+		height:$iheight;
+		border-width: 1px;
+	}
+}
+%transitiontime {
+	  -webkit-transition: -webkit-transform .2s linear;
+	  -moz-transition: -moz-transform .2s linear;
+	  transition: -moz-transform .2s linear;
+}
+%hoverleft{
+	-webkit-transform:translateX(-5px);-moz-transform:translateX(-5px);transform:translateX(-5px);
+}
+@function black($opacity){
+  @return rgba(0,0,0,$opacity);
+}
+
+@function white($opacity){
+  @return rgba(255,255,255,$opacity);
+} 

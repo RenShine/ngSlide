@@ -1,0 +1,8 @@
+<div class="cc tibooslider" id="{{ config.id }}">
+    <ul class="cc" id="{{ config.id + 'ul' }}">
+        <li class="aa" ng-repeat="slide in config.li">
+            <img ng-src="{{ slide.src }}" alt=""/>
+            <p ng-if="slide.txt">{{ slide.txt }}</p>
+        </li>
+    </ul>
+</div>

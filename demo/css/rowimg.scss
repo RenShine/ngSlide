@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@mixin tibooslider($colpadding,$rowpadding,$slidewidth:normal,$slideheight:normal,$shadow:1,$font:1em "微软雅黑"){
+  position: relative;
+  & ul{
+    position: relative;
+  }
+  & li{
+    float: left;
+    *display: inline;
+    margin:$rowpadding $colpadding;
+    width: $slidewidth;
+    height: $slideheight;
+    position: relative;
+    & img{
+      width: $slidewidth;
+      height: $slideheight;
+    }
+    @if($shadow){
+      & p{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color:white;
+        opacity: .6;
+        color:black;
+        text-align: center;
+        padding: .5em 0;
+        width: 100%;
+        font:$font;
+      }
+    }@else {
+        padding: .5em;
+        font:$font;
+    }
+
+  }
+}

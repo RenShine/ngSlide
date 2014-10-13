@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@import "base.scss";
+
+//rowimg
+@import "rowimg.scss";
+$rowpadding:1em;
+$colpadding:1em;
+$slidewidth:200px;
+$slideheight:200px;
+$shadow:1;
+$font:1em "微软雅黑";
+.tibooslider{
+
+  @include tibooslider($colpadding,$rowpadding,$slidewidth,$slideheight,$shadow,$font);
+}
+

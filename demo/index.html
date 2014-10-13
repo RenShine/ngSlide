@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<meta chaset="utf-8">
+<head>
+    <script src="js/angular.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/slider.js"></script>
+
+    <link rel="stylesheet" href="css/tibooslider.css"/>
+    <style>
+        *{margin:0;padding: 0}
+        ul,li{margin:0;list-style: none}
+    </style>
+</head>
+<body ng-app="app" ng-controller="appcon">
+<div slider></div>
+<script src="js/ngslider.js"></script>
+<script>
+    angular.module("app",['tibooslider'])
+            .controller("appcon",function($scope){
+                $scope.config = {autoPlay:'true',id: "tibooslider"};
+                $scope.config.li = [
+                    {src:"http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg",txt:"你猜猜看啊"},
+                    {src:"http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg"},
+                    {src:"http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg"},
+                    {src:"http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg"},
+                ];
+            });
+</script>
+</body>
+</html>
