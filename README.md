@@ -3,23 +3,29 @@ ngSlide
 
 #基于angularJs和scss制作的幻灯组件
 
+###包依赖
+    <script src='js/jquery.js'>
+    <script src='js/angular.js'>
+    <script src='js/slider.js'>
 ###使用方法
+    <div slider controller='yourcon' id='plugnid'>
+        <li>
+            <img src="imagesrc" alt="">
+        </li>
+        <li>
+            <img src="imagesrc" alt="">
+        </li>
+        <li>
+            <img src="imagesrc" alt="">
+        </li>
+        <li>
+            <img src="imagesrc" alt="">
+        </li>
+    </div>
+###SCSS调用
+    @import "rowimg.scss";
+    #plugnid{
+      @include tibooslider($colpadding,$rowpadding,$slidewidth,$slideheight,$shadow,$font);
+    } //$colpadding:列间距，$rowpadding:行间距,$slidewidth:幻灯宽度，$slideheight:幻灯高度,$shadow:是否开启底部阴影,$font:字体
 
-####HTML部分：
 
-    <div slider controller=‘yourcon’></div>
-
-####js部分：
-    <script src="js/ngslider.js"></script>
-    <script>
-        angular.module("app",['tibooslider'])
-                .controller("appcon",function($scope){
-                    $scope.config = {autoPlay:'true',id: "tibooslider"};
-                    $scope.config.li = [
-                        {src:"http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg",txt:"你猜猜看啊"},
-                        {src:"http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg"},
-                        {src:"http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg"},
-                        {src:"http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg"},
-                    ];
-                });
-    </script>

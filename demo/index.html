@@ -13,18 +13,21 @@
     </style>
 </head>
 <body ng-app="app" ng-controller="appcon">
-<div slider></div>
+<div slider id="ngSlide">
+        <li>
+            <img src="http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg" alt=""/>
+        </li>
+    <li>
+        <img src="http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg" alt=""/>
+    </li>
+    <li>
+        <img src="http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg" alt=""/>
+    </li>
+</div>
 <script src="js/ngslider.js"></script>
 <script>
-    angular.module("app",['tibooslider'])
+    angular.module("app",['ngSlide'])
             .controller("appcon",function($scope){
-                $scope.config = {autoPlay:'true',id: "tibooslider"};
-                $scope.config.li = [
-                    {src:"http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg",txt:"你猜猜看啊"},
-                    {src:"http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg"},
-                    {src:"http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg"},
-                    {src:"http://img0.bdstatic.com/img/image/shouye/mxlss-11768371880.jpg"},
-                ];
             });
 </script>
 </body>

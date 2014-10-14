@@ -13,7 +13,6 @@
 
                     "</ul>" +
                     "</div>",
-                //templateUrl: 'slider.html'   (if you have localhost)
                 link:function(scope,elem,attrs){
 
                           var id = "#" + scope.id;
