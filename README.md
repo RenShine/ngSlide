@@ -3,10 +3,17 @@ ngSlide
 
 #基于angularJs和scss制作的幻灯组件
 
+[插件介绍](http://www.cnblogs.com/RenShine/p/ngSlide2.html)
+
 ###包依赖
     <script src='js/jquery.js'>
     <script src='js/angular.js'>
     <script src='js/slider.js'>
+
+需要在你的angular初始化时进行依赖注入
+
+	angular.moudle('yourmoudlename',['ngSlide'])
+	
 ###使用方法
     <div slider controller='yourcon' id='plugnid'>
         <li>
@@ -46,3 +53,4 @@ ngSlide
     autoPage:false,//系统自动分页，当为true时，titCell则为导航元素父层对象，同时系统会在titCell里面自动插入分页li元素(1.2版本新增)
     prevCell:".prev",//前一个按钮元素。
     nextCell:".next"//后一个按钮元素。
+
