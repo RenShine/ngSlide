@@ -1,7 +1,6 @@
-ngSlide
+ngSlide 基于angularJS和scss制作的图片轮播插件
 =======
 
-#基于angularJs和scss制作的幻灯组件
 
 [插件介绍](http://www.cnblogs.com/RenShine/p/ngSlide2.html)
 
